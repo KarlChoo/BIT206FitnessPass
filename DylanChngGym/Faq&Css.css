@@ -1,0 +1,48 @@
+.container{color: black;}
+
+.faqmainbackground{object-fit: fill;}
+
+.faqh1{text-align: center;
+        font-size: 1em;}
+
+.contactusback{object-fit:fill;
+                height: auto;
+                width: 100%;
+                margin-right: 0;
+                margin-left: 0;}
+
+.contactusinfo{text-align: center;
+                border: solid;
+                margin-left: 15%;
+                margin-right: 15%;
+                overflow: auto;}
+
+.text{font-size: 14px;}
+
+
+.cuh1{text-align: center;}
+
+.cuh2{text-decoration: none;
+    text-align: center;}
+
+
+h3 li {list-style-type:none;
+		margin:0;}
+		
+h3 li{display:inline-block;
+		padding:0.5em;}
+
+h3 ul ul{display:none;
+			position:absolute;
+			background-color:#5564A0;
+			padding:0;
+			text-align:left;}
+h3 ul ul li{display:block;
+			border:1px solid #00005D;
+			width:8em;
+			padding-left:1em;
+			margin-left:0;}
+h3 li:hover ul {display:block;}
+
+
+
