@@ -1,9 +1,23 @@
+/***
+*
+General css
+*
+***/
+html{
+  scroll-behavior: smooth;
+}
+
 footer{
   background-color: #2f2f2f; /* Black Gray */
   color: #fff;
   width:100%;
 }
 
+/***
+*
+Navigation css
+*
+***/
 #gymNav{
     margin-left: 2%!important;
     font-size: 18px;
@@ -11,14 +25,29 @@ footer{
     letter-spacing: 1.5px;
 }
 
-#gymNav ul li a{
+#gymNav ul li a .dropdown-item{
     color: #909090;
+}
+
+.dropdown-item:hover{
+    background-color: #acacac!important;
+}
+
+#gymNav ul li a:hover {
+  color:white!important;
+  text-decoration: underline;
 }
 
 .activeGym a{
     color:white!important;
 }
 
+
+/***
+*
+Sign up css
+*
+***/
 #signUpForm{
     margin:3% auto;
     box-shadow: 0 2px 4px rgba(0,0,0,0.6);
