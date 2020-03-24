@@ -42,6 +42,16 @@ Navigation css
     color:white!important;
 }
 
+/***
+*
+Gym Classes css
+*
+***/
+#schedule tr:hover{
+    color:white!important;
+    font-weight: bold;
+    background-color: #3c424f!important;
+}
 
 /***
 *
@@ -57,4 +67,41 @@ Sign up css
 #signUpForm input:focus{
     border-color: green!important;
     box-shadow:0 0 0 .2rem rgba(0,255,0,.25)!important;
+}
+
+/***
+*
+Media CSS
+*
+***/
+
+@media only screen and (max-width: 576px) {
+  #schedule td a img{
+    width: 105%!important;
+  }
+  #schedule td{
+    padding: .25rem;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  #schedule td a img{
+    width: 100%!important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #schedule td a img{
+    width: 70%!important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #schedule td a img{
+    width: 45%!important;
+  }
 }
