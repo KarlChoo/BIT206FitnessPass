@@ -13,6 +13,9 @@ footer{
   width:100%;
 }
 
+#body{
+  background-color: #474e5d;
+}
 /***
 *
 Navigation css
@@ -49,7 +52,6 @@ Gym Classes css
 ***/
 #schedule tr:hover{
     color:white!important;
-    font-weight: bold;
     background-color: #3c424f!important;
 }
 
@@ -78,9 +80,11 @@ Media CSS
 @media only screen and (max-width: 576px) {
   #schedule td a img{
     width: 105%!important;
+    max-width: 42px;
+    max-height: 42px;
   }
   #schedule td{
-    padding: .25rem;
+    padding: .25rem!important;
   }
 }
 
