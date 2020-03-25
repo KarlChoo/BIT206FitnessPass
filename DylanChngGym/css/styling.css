@@ -73,6 +73,17 @@ Sign up css
 
 /***
 *
+404 Page
+*
+***/
+#messsage404mobile span{
+    font-family: Montserrat, Roboto, sans-serif;
+    letter-spacing: -.17em;
+}
+
+
+/***
+*
 Media CSS
 *
 ***/
@@ -86,18 +97,22 @@ Media CSS
   #schedule td{
     padding: .25rem!important;
   }
+  #message404desktop{display: none;}
 }
 
 @media only screen and (min-width: 577px) {
   #schedule td a img{
     width: 100%!important;
   }
+  #message404mobile{display: visible;}
+  #message404desktop{display: visible;}
 }
 
 @media only screen and (min-width: 768px) {
   #schedule td a img{
     width: 70%!important;
   }
+  #message404mobile{display: none;}
 }
 
 @media only screen and (min-width: 992px) {

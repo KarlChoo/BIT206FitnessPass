@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Fitness Pass</title>
+  <link rel="icon" type="image/png" href="fav1.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="FitnessPassDylan.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default" id="top">
+  <div class="container">
+    <div class=" navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li> <img src="dumbell.png" alt="dumbell" width="60" height="50" ></li>
+        <li><a href="index.html">FitnessPass</a></li>
+        <li><a href="index.html#aboutUs">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="Pricing.html">Subscription</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="GymList.html">Studios</a></li>
+          <li><a href="Register.html">Sign Up Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <h1>User Infomation</h1>
+
+  <div class="responsive">
+	<div class="register col-md-12" >
+      <hr>
+      <h2>Customer Registration</h2>
+
+		<table class ="col-md-12">
+
+			<tr>
+				<td>First Name</td>
+				<td>Last Name</td>
+			</tr>
+			<tr>
+				<td> <input style="color:#000000 !important" type ="text" name ="first" id ="fname" placeholder =" e.g : Dylan"> </td>
+				<td> <input style="color:#000000 !important" type ="text" name ="last" id ="lname" placeholder =" e.g : Kam "> </td>
+			</tr>
+    </table>
+
+    <table>
+			<tr>
+				<td>E-mail</td>
+			</tr>
+
+			<tr>
+				<td > <input style="color:#000000 !important"
+          type="email" name ="email" id = "email" size = '50' placeholder = "e.g : abc@gmail.com"></td>
+			</tr>
+    </table>
+
+    <table>
+			<tr>
+				<td>Password</td>
+				<td>Password Repeat</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<input style="color:#000000 !important" type = "password" name = "pass1" id = "password" placeholder = "at least 8 characters"> &nbsp;
+				</td>
+				<td>
+					<input style="color:#000000 !important" type = "password" name = "pass2" id = "rpPassword" placeholder = "at least 8 characters">
+				</td>
+			</tr>
+			</table>
+</div>
+
+<div class="col-md-12">
+      <h2>Credit/Debit Card Details</h2>
+      <hr>
+		    <table>
+                <tr>
+                    <td>Card No.</td>
+                </tr>
+                <tr>
+                    <td>
+                            <input type = "text" name = "address " id ="address1" size ="50">
+                    </td>
+                </tr>
+        </table>
+        <table>
+                <tr>
+                    <td>
+                        Year
+                    </td>
+                    <td class="FormSpacing">
+                        Month
+                    </td>
+                    <td class="FormSpacing">
+                        CVV
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input style="color:#000000 !important" type = "text" name = "city" >
+                    </td>
+                    <td class="FormSpacing">
+                        <input style="color:#000000 !important" type ="text" name ="state" size ="5" >
+                    </td >
+                    <td class="FormSpacing">
+                        <input style="color:#000000 !important" type ="text" name ="Zip" size ="8" >
+                    </td>
+                </tr>
+          </table>
+          <table>
+                <tr>
+                    <td>
+                        Phone
+                    </td>
+                    <td class="FormSpacing">
+                        Bank
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input style="color:#000000 !important" type ="text" name = "phone" >
+                    </td>
+                    <td class="FormSpacing">
+                        <select style="color:#000000 !important" name = " country " >
+                            <option style="color:#000000 !important"> CIMB </option>
+                            <option style="color:#000000 !important"> Hong Leong </option>
+                            <option style="color:#000000 !important"> May Bank </option>
+                            <option style="color:#000000 !important"> RHB </option>
+                            <option style="color:#000000 !important"> Citi Bank </option>
+                        </select>
+                    </td>
+
+            </table>
+    </div>
+
+    <div class="col-md-12">
+
+            <h2>Select a Package</h2>
+            <hr>
+
+            <table class="col-md-12">
+              <tr>
+                  <td>
+                      Package
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <select style="color:#000000 !important" name = " country " >
+                        <option style="color:#000000 !important"> Premium </option>
+                        <option style="color:#000000 !important"> Standard </option>
+                        <option style="color:#000000 !important"> Basic </option>
+                    </select>
+                  </td>
+              </tr>
+		      </table>
+        </div>
+
+     <button class="marginLeft" style="background-color: #000000; border:none" onclick="CompletePayment()">Sign Me Up</button>
+     <script>
+       function CompletePayment() {
+         alert("Payment Successful! Thanks for choosing FitnessPass!");}
+      </script>
+
+
+	</div>
+
+<footer class="container-fluid backGround-4 text-center">
+  <h4>Fitness Pass &copy; copyright 2019</h4>
+</footer>
+</body>
+</html>
