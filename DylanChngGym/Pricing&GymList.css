@@ -93,13 +93,12 @@
 
 .imagecontainer{
     margin: 0.5% 10%;
-    width:80%;
-    height:200px;
+    width:50%;
+    height:100px;
 }
 .gymimage{
-    height:100%;
-    width:100%;
-    object-fit: cover;
+    height:30px;
+    width:30px;
 }
 
 .gymaddress{
@@ -132,7 +131,7 @@
     }
     .gymcard{
         width:90%;
-        margin:5%;}  
+        margin:5%;}
     }
     /*one gymcard per line media queries*/
     /*.maincontent{
