@@ -78,9 +78,12 @@ Sign up css
 ***/
 #messsage404mobile span{
     font-family: Montserrat, Roboto, sans-serif;
-    letter-spacing: -.17em;
+    letter-spacing: -.15em!important;
 }
 
+#message404desktop{
+  font-family: Montserrat, Roboto, sans-serif;
+}
 
 /***
 *
