@@ -20,77 +20,82 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js"></script>
   <style>
-    #pleft{
-      padding-left:55px;
-    }
-
     .solid{
-      border-top-style:none;
-      border-left-style:none;
-      border-right-style:none;
-      border-bottom-style:solid;
-      border-bottom-width:5px;
-      border-color:orange;
+      border-top-style:2px;
+      border-left-style:2px;
+      border-right-style:2px;
+      border-bottom-style:2px;
+      border-bottom-width:2px;
+      border-color:black;
     }
 
   </style>
 </head>
 
 
-<body id="body">
+<body style="background-color:white;">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000;!important">
-    <a class="navbar-brand" href="#" style="margin-left: 5%!important"><img src="dumbell.png" alt="dumbell" width="60" height="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:white;!important">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="margin-left: 5%!important"><img src="dumbell2.jpg" alt="dumbell" width="60" height="50"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="gymNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item activeGym"><a href="indexcopied.html" class="nav-link">FitnessPass</a></li>
-          <li class="nav-item"><a href="index.html#aboutUs" class="nav-link">About Us</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="gymClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Classes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="gymClasses">
-              <a class="dropdown-item" href="Yoga.html">Yoga</a>
-              <a class="dropdown-item" href="Boxing.html">Boxing</a>
-              <a class="dropdown-item" href="MuayThai.html">Muay thai</a>
-              <a class="dropdown-item" href="Pilate.html">Pilate</a>
-              <a class="dropdown-item" href="Zumba.html">Zumba</a>
-              <a class="dropdown-item" href="Crossfit.html">Crossfit</a>
-            </div>
-          </li>
-          <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="Pricing.html" class="nav-link">Subscription</a></li>
-          <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
-          <li class="nav-item"><a href="GymList.html" class="nav-link">Studios</a></li>
-          <li class="nav-item"><a href="Register.html" class="nav-link">Sign Up Now</a></li>
-        </ul>
+      <div class="collapse navbar-collapse" id="gymNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item activeGym"><a href="indexcopied.html" class="nav-link"><font color="black">FitnessPass</font></a></li>
+            <li class="nav-item"><a href="index.html#aboutUs" class="nav-link"><font color="black">About Us</font></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="gymClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black"><font color="black">
+                Classes
+              </font></a>
+              <div class="dropdown-menu" aria-labelledby="gymClasses">
+                <a class="dropdown-item" href="Yoga.html">Yoga</a>
+                <a class="dropdown-item" href="Boxing.html">Boxing</a>
+                <a class="dropdown-item" href="MuayThai.html">Muay thai</a>
+                <a class="dropdown-item" href="Pilate.html">Pilate</a>
+                <a class="dropdown-item" href="Zumba.html">Zumba</a>
+                <a class="dropdown-item" href="Crossfit.html">Crossfit</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="faq.html" class="nav-link"><font color="black">FAQ`</font></a></li>
+            <li class="nav-item"><a href="Pricing.html" class="nav-link"><font color="black">Subscription</font></a></li>
+            <li class="nav-item"><a href="contactus.html" class="nav-link"><font color="black">Contact Us</font></a></li>
+            <li class="nav-item"><a href="GymList.html" class="nav-link"><font color="black">Studios</font></a></li>
+            <li class="nav-item"><a href="Register.html" class="nav-link"><font color="black">Sign Up Now</font></a></li>
+          </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <h1 class="text-white">Classes</h1>
-    <div class="row">
+  <div>
+    <img class="card-img-top" src="cardsImages/wallpaper.jpg" alt="yoga" style="width:100%">
+  </div>
 
-      <!-- Yoga -->
+  <div class="container-fluid solid">
+    <h1 class="text-black">Classes</h1>
+    <div class="row">
+      <!-- Zumba -->
       <div class="col-sm-4">
         <div class="solid card" style="width:100%">
-          <img class="card-img-top" src="cardsImages/yoga1.jpg" alt="yoga" style="width:100%">
+          <img class="card-img-top" src="cardsImages/zumba.jpg" alt="yoga" style="width:100%">
           <div class="card-body">
-            <h2 class="card-title">Yoga</h2>
+            <h2 class="card-title">Zumba</h2>
             <h5 class="card-text">Elements of Exercise :</h5>
             <b><ul>
-              <li>Breathing</li>
-              <li>Meditation</li>
+              <li>Rythm</li>
+              <li>Hips Movement</li>
+              <li>Stomach</li>
+              <li>Footwork</li>
+              <li>Full Body</li>
             </ul></b>
-            <a href="Yoga.html" class="btn btn-primary">Schedules</a>
+            <a href="Zumba.html" class="btn btn-primary">Schedules</a>
           </div>
         </div>
       </div>
+
       <!-- Boxing -->
       <div class="col-sm-4">
         <div class="solid card" style="width:100%">
@@ -133,6 +138,23 @@
     </div>
 
     <div class="row">
+
+      <!-- Yoga -->
+      <div class="col-sm-4">
+        <div class="solid card" style="width:100%">
+          <img class="card-img-top" src="cardsImages/yoga1.jpg" alt="yoga" style="width:100%">
+          <div class="card-body">
+            <h2 class="card-title">Yoga</h2>
+            <h5 class="card-text">Elements of Exercise :</h5>
+            <b><ul>
+              <li>Breathing</li>
+              <li>Meditation</li>
+            </ul></b>
+            <a href="Yoga.html" class="btn btn-primary">Schedules</a>
+          </div>
+        </div>
+      </div>
+
       <!-- Pilates-->
       <div class="col-sm-4">
         <div class="solid card" style="width:100%">
@@ -144,24 +166,6 @@
               <li>Body Balancing</li>
             </ul></b>
             <a href="Pilate.html" class="btn btn-primary">Schedules</a>
-          </div>
-        </div>
-      </div>
-      <!-- Zumba -->
-      <div class="col-sm-4">
-        <div class="solid card" style="width:100%">
-          <img class="card-img-top" src="cardsImages/zumba.jpg" alt="yoga" style="width:100%">
-          <div class="card-body">
-            <h2 class="card-title">Zumba</h2>
-            <h5 class="card-text">Elements of Exercise :</h5>
-            <b><ul>
-              <li>Rythm</li>
-              <li>Hips Movement</li>
-              <li>Stomach</li>
-              <li>Footwork</li>
-              <li>Full Body</li>
-            </ul></b>
-            <a href="Zumba.html" class="btn btn-primary">Schedules</a>
           </div>
         </div>
       </div>
@@ -236,6 +240,6 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 </html>
