@@ -13,6 +13,9 @@ footer{
   width:100%;
 }
 
+#body{
+  background-color: #474e5d;
+}
 /***
 *
 Navigation css
@@ -42,6 +45,15 @@ Navigation css
     color:white!important;
 }
 
+/***
+*
+Gym Classes css
+*
+***/
+#schedule tr:hover{
+    color:white!important;
+    background-color: #3c424f!important;
+}
 
 /***
 *
@@ -57,4 +69,150 @@ Sign up css
 #signUpForm input:focus{
     border-color: green!important;
     box-shadow:0 0 0 .2rem rgba(0,255,0,.25)!important;
+}
+
+/***
+*
+404 Page
+*
+***/
+#messsage404mobile span{
+    font-family: Montserrat, Roboto, sans-serif;
+    letter-spacing: -.15em!important;
+}
+
+#message404desktop{
+  font-family: Montserrat, Roboto, sans-serif;
+}
+
+/***
+*
+Media CSS
+*
+***/
+
+/***
+*
+FAQ CSS
+*
+***/
+.questionLinks{
+  color:#000000;
+  font-size: 20px;
+}
+
+.questionDiv{
+  background-color: #e3e3e3;
+}
+
+.answerDiv{
+  display:none;
+}
+
+.answerTag{
+  font-size:15px;
+}
+
+.answerWords{
+  font-size:18px;
+}
+
+/***
+*
+Subscription CSS
+*
+***/
+.packageImg{
+  height:220px;
+}
+
+.packageInfo{
+  height:280px;
+}
+
+.subscribeBtn{
+  position: absolute;
+  bottom: 2%;
+  left: 30%;
+  width: 40%;
+}
+
+@media only screen and (max-width: 576px) {
+  #schedule td a img{
+    width: 105%!important;
+    max-width: 42px;
+    max-height: 42px;
+  }
+  #schedule td{
+    padding: .25rem!important;
+  }
+  #message404desktop{display: none;}
+}
+
+@media only screen and (min-width: 577px) {
+  #schedule td a img{
+    width: 100%!important;
+  }
+  #message404mobile{display: visible;}
+  #message404desktop{display: visible;}
+}
+
+@media only screen and (min-width: 768px) {
+  #schedule td a img{
+    width: 70%!important;
+  }
+  #message404mobile{display: none;}
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #schedule td a img{
+    width: 45%!important;
+  }
+}
+
+/***
+*
+Subscription CSS
+*
+***/
+@media only screen and (max-width: 991px) {
+  .packageImg{
+    min-height:450px;
+  }
+
+  .packageInfo{
+    min-height:315px;
+  }
+
+  .packageInfo h5{
+    font-size:30px;
+    margin-bottom:30px;
+  }
+
+  .packageInfo li{
+    font-size:20px;
+  }
+
+  .subscribeBtn{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .packageImg{
+    height:180px;
+  }
+
+  .packageInfo{
+    height:260px;
+  }
+
+  .subscribeBtn{
+    left: 20%;
+    width: 60%;
+  }
 }
