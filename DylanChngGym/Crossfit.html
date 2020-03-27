@@ -6,145 +6,205 @@
   <link rel="icon" type="image/png" href="fav1.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="FitnessPassDylan.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js"></script>
 </head>
-<body>
+<body id="body">
 
 <!-- Navbar -->
-<nav class="navbar navbar-default" id="top">
-  <div class="container">
-    <div class=" navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li> <img src="dumbell.png" alt="dumbell" width="60" height="50" ></li>
-        <li><a href="index.html">FitnessPass</a></li>
-        <li><a href="index.html#aboutUs">About Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="Pricing.html">Subscription</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-          <li><a href="GymList.html">Studios</a></li>
-          <li><a href="Register.html">Sign Up Now</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000;!important">
+  <a class="navbar-brand" href="#" style="margin-left: 5%!important"><img src="dumbell.png" alt="dumbell" width="60" height="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="gymNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">FitnessPass</a></li>
+        <li class="nav-item"><a href="index.html#aboutUs" class="nav-link">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="gymClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Classes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="gymClasses">
+            <a class="dropdown-item" href="Yoga.html">Yoga</a>
+            <a class="dropdown-item" href="Boxing.html">Boxing</a>
+            <a class="dropdown-item" href="MuayThai.html">Muay thai</a>
+            <a class="dropdown-item" href="Pilate.html">Pilate</a>
+            <a class="dropdown-item" href="Zumba.html">Zumba</a>
+            <a class="dropdown-item" href="Crossfit.html">Crossfit</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="Pricing.html" class="nav-link">Subscription</a></li>
+        <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+        <li class="nav-item"><a href="GymList.html" class="nav-link">Studios</a></li>
+        <li class="nav-item"><a href="Register.html" class="nav-link">Sign Up Now</a></li>
       </ul>
-    </div>
   </div>
 </nav>
-<div style="margin:0 20%; text-align:center;">
-    <h1>Crossfit</h1>
 
-    <img src="Melpic/Crossfit.jpeg" alt="crossfit" style="width:100%;object-fit: contain;height:100%;">
-    <br><h4>CrossFit is a training philosophy that coaches people of all shapes and sizes to improve their physical well-being and cardiovascular
-		fitness in a hardcore yet accepting and encouraging environment. Exercise of crossfits includes air squad.
-		Front squad, overhead squad and more.</h4>
-    <button type="button" class="btn btn-warning" onclick="crossfitDetails()" >Crossfit</button>
+<!--Breadcrumb-->
+<div id="breadcrumb" class="container-fluid text-dark py-2 bg-light font-weight-bold">
+    <a href="index.html">Home</a> > <a href="index.html#classes">Classes</a> > Crossfit
 </div>
-<div class="container-fluid ">
+<!--END Breadcrumb-->
 
-  <div id="crossfit" style="display:none">
 
-<div class="container-fluid">
-<!-- here -->
-<table class="table tableHover">
+<!--Content-->
+<div class="container text-light text-center mt-3">
+    <h1>Crossfit</h1>
+</div>
+
+<div class="container text-center">
+  <img src="Melpic/Crossfit.jpeg" class="img-fluid" alt="crossfit">
+  <h5 class="text-light mt-3 font-weight-normal"> CrossFit is a training philosophy that coaches people of all shapes and sizes to improve their physical well-being and cardiovascular
+  fitness in a hardcore yet accepting and encouraging environment. Exercise of crossfits includes air squad.
+  Front squad, overhead squad and more.</h5>
+</div>
+
+<div class="container text-center text-light">
+<h2 class="mt-5 mb-2">Schedule</h2>
+</div>
+
+<div class="container-fluid pt-4">
+<table class="table table-hover text-center text-light" id="schedule">
 	<thead>
     <tr>
     <th></th>
-		<td class ="center">9am</td>
-		<td class ="center">11am</td>
-		<td class ="center">1 pm</td>
-		<td class ="center">3 pm</td>
-		<td class ="center">9 pm</td>
+		<td>9am</td>
+		<td>11am</td>
+		<td>1pm</td>
+		<td>3pm</td>
+		<td>9pm</td>
 		</tr>
 	</thead>
 	<tbody>
     <tr>
 			<td>Monday</td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 			<td></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 		</tr>
 		<tr>
 			<td>Tuesday</td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
 			<td></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
 		</tr>
 		<tr>
 			<td>Wednesday</td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 		</tr>
 		<tr>
 			<td>Thursday</td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
 		</tr>
 		<tr>
 			<td>Friday</td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 		</tr>
 		<tr>
 			<td>Saturday</td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 			<td></td>
-			<td class ="center"><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossFitLah"><img src ="Melpic/Crossfitlah.jpg" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 		</tr>
 		<tr>
 			<td>Sunday</td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
 			<td></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
-			<td class ="center"><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
-			<td class ="center"><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
+			<td ><a href="GymList.html#PushMore"><img src ="Melpic/pushmorelogo.jpg" alt="crossfit" style ="width : 45%"></a></td>
+			<td ><a href="GymList.html#CrossfitPahlawan"><img src ="Melpic/pahlawanlogo.png" alt="crossfit" style ="width : 45%;"></a></td>
 		</tr>
 </tbody>
 </table>
 </div>
-  </div>
-  <div id="yoga" style="display:none">
-		<p>Yoga
-		</p>
-  </div>
-</div>
 
+<!--END Content -->
 
-<!-- JavaScripting  for air yoga-->
 <script>
-function crossfitDetails() {
-  var y = document.getElementById("cross");
-  var x = document.getElementById("crossfit");
-  if (x.style.display == "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-  } else {
-    x.style.display = "none";
-  }
-}
 </script>
 
+<!----Footer Link ------>
+<footer class="site-footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+              <br><br><br>
+        <h3 class="footer-heading mb-4 text-white">About</h3>
+        <p>Fitness Pass is a web-based application specialized in providing GYM classes and schedules upon SUBSCRIPTION.
+        We have tied connection and collaboration with various gyms and fitness facilities around Kuala Lumpur area.</p>
+        <p><a href="#" class="btn btn-primary text-white px-4">Read More</a></p>
+      </div>
+      <div class="col-md-5 mb-4 mb-md-0 ml-auto">
+        <div class="row mb-4">
+          <div class="col-md-6">
+                  <br><br>
+            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+              <ul class="list-unstyled">
+                <li><a href="index.html" style="color: #FFFFFF;">Fitness Pass</a></li>
+                <li><a href="index.html#aboutUs" style="color: #FFFFFF;">About Us</a></li>
+                <li><a href="faq.html" style="color: #FFFFFF;">FAQ</a></li>
+                <li><a href="Pricing.html" style="color: #FFFFFF;">Subscription</a></li>
+                <li><a href="contactus.html" style="color: #FFFFFF;">Contact Us</a></li>
+                <li><a href="GymList.html" style="color: #FFFFFF;">Studios</a></li>
+                <li><a href="Register.html" style="color: #FFFFFF;">Sign Up Now</a></li><br>
+              </ul>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+          <h3 class="footer-heading mb-4 text-white">Stay up to date</h3>
+          <form action="#" class="d-flex footer-subscribe">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email">
+            <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" style="color: #007bff;">Fitness Pass</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
 
 
-<br>
-<!-- Footer -->
-<footer class="container-fluid backGround-4 text-center" style="position:fixed; bottom:0;">
-  <h4 class="cpright">Fitness Pass &copy; copyright 2019</h4>
+      </div>
+
+    </div>
+  </div>
 </footer>
+<!----END Footer Link ------>
 </body>
 </html>
