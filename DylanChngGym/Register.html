@@ -236,8 +236,31 @@
 <!--END Content-->
 
 <script>
+
+    var decodedCookie = decodeURIComponent(document.cookie);
+    console.log(decodedCookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <1; i++) {
+      var pkg = ca[i].substring(ca[i].indexOf("=")+1);
+    }
+
+    if(pkg == "basic"){
+      document.getElementById('basicRadio').checked = true;
+    }
+
+    if(pkg == "standard"){
+      document.getElementById('standardRadio').checked = true;
+    }
+
+    if(pkg == "premium"){
+      document.getElementById('premiumRadio').checked = true;
+    }
+
+
+
     function CompletePayment() {
-    alert("Payment Successful! Thanks for choosing FitnessPass!");}
+      alert("Payment Successful! Thanks for choosing FitnessPass!");
+    }
 
     $('a[data-toggle="tooltip"]').tooltip({
         animated: 'fade',
