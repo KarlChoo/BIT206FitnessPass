@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Fitness Pass</title>
+  <link rel="icon" type="image/png" href="fav1.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js"></script>
+</head>
+<body id="body">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000;!important">
+  <div class="container p-0">
+  <a class="navbar-brand" href="#" style="margin-left: 5%!important"><img src="dumbell.png" alt="dumbell" width="60" height="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="gymNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">FitnessPass</a></li>
+        <li class="nav-item"><a href="index.html#aboutUs" class="nav-link">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="gymClasses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Classes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="gymClasses">
+            <a class="dropdown-item" href="Yoga.html">Yoga</a>
+            <a class="dropdown-item" href="Boxing.html">Boxing</a>
+            <a class="dropdown-item" href="MuayThai.html">Muay thai</a>
+            <a class="dropdown-item" href="Pilate.html">Pilate</a>
+            <a class="dropdown-item" href="Zumba.html">Zumba</a>
+            <a class="dropdown-item" href="Crossfit.html">Crossfit</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="Pricing.html" class="nav-link">Subscription</a></li>
+        <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+        <li class="nav-item"><a href="GymList.html" class="nav-link">Studios</a></li>
+        <li class="nav-item activeGym"><a href="Booking.html" class="nav-link">Booking</a></li>
+        <li class="nav-item"><a href="Register.html" class="nav-link">Sign Up Now</a></li>
+      </ul>
+  </div>
+</div>
+</nav>
+
+<!--HEADER-->
+<div class="container text-center mt-5">
+  <h1 class="text-light font-weight-bold">Booking</h1>
+</div>
+<!--END HEADER-->
+
+<!--Content-->
+<div class="container text-light bg-dark pb-4" id="signUpForm">
+  <form method="post" autocomplete="false">
+    <h1 class="pt-3 text-center">User Infomation</h1>
+    <hr class="border-light">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+              <label for="firstname">First Name</label>
+              <div class="input-group input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="userIcon">
+                    <i class="fa fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" id="firstname" class="form-control" aria-label="First name input" aria-describedby="userIcon" required placeholder="First Name">
+              </div>
+
+              <label for="lastname">Last Name</label>
+              <div class="input-group input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="userIcon2">
+                    <i class="fa fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" id="lastname" class="form-control" aria-label="Last name input" aria-describedby="userIcon2" required placeholder="Last Name">
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <label for="email">E-mail</label>
+              <div class="input-group input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="emailIcon">
+                    <i class="fa fa-envelope-o"></i>
+                  </span>
+                </div>
+                <input type="email" id="email" class="form-control" aria-label="Email input" aria-describedby="emailIcon" required placeholder="e.g: abc@gmail.com">
+              </div>
+
+              <label for="contactNo">Contact No.</label>
+              <div class="form-group input-group input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="phoneIcon">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input type="text" id="contactNo" class="form-control" aria-label="Contact No input" aria-describedby="phoneIcon" required placeholder="Contact Number">
+              </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <label for="contactNo">Class</label>
+            <select class="form-control" id="class" onchange="return populateClass(this.value)">
+              <option value="yoga"> Yoga </option>
+              <option value="boxing"> Boxing </option>
+              <option value="muaythai"> Muay Thai </option>
+              <option value="pilate"> Pilate </option>
+              <option value="zumba"> Zumba </option>
+              <option value="crossfit"> Crossfit </option>
+            </select>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <label for="contactNo">Class</label>
+            <select class="form-control" id="studio">
+                <option>CHI Fitness</option>
+                <option>The Flow Studio</option>
+                <option>Hot Yo Studo</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block mx-3 mb-4" onclick="completeBooking()">Register</button>
+    </form>
+</div>
+<!--END Content-->
+
+<script>
+function populateClass(className){
+    console.log(className);
+    var studioDropdown = document.getElementById("studio");
+    var options;
+
+    for (var i=0; i<studioDropdown.length; i) {
+        studioDropdown.remove(i);
+    }
+
+    switch (className) {
+      case "yoga":
+          options = ["CHI Fitness","The Flow Studio","Hot Yo Studo"];
+      break;
+      case "boxing":
+          options = ["BoxTyme","Tribe Boxing Studio"];
+      break;
+      case "muaythai":
+          options = ["Muay Fit","Cross Muay Thai"];
+      break;
+      case "pilate":
+          options = ["Urban Spring Pilates","Vision Pilates"];
+      break;
+      case "zumba":
+          options = ["Avenger Gym & Zumba","Celebrity Fitness (Kepong Village)"];
+      break;
+      case "crossfit":
+          options = ["CrossFit Lah","Crossfit Pahlawan","PushMore"];
+      break;
+    }
+
+    console.log(options.length);
+
+    for(var i = 0; i < options.length; i++) {
+        var opt = options[i];
+        var el = document.createElement("option");
+        el.textContent = opt;
+        //el.value = opt;
+        studioDropdown.appendChild(el);
+    }
+}
+
+function completeBooking(){
+    alert("Your booking has been made! Thank you for choosing FitnessPass");
+}
+</script>
+
+<footer class="site-footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+              <br><br><br>
+        <h3 class="footer-heading mb-4 text-white">About</h3>
+        <p>Fitness Pass is a web-based application specialized in providing GYM classes and schedules upon SUBSCRIPTION.
+            We have tied connection and collaboration with various gyms and fitness facilities around Kuala Lumpur area.</p>
+        <p><a href="#" class="btn btn-primary text-white px-4">Read More</a></p>
+      </div>
+      <div class="col-md-5 mb-4 mb-md-0 ml-auto">
+        <div class="row mb-4">
+          <div class="col-md-6">
+                  <br><br>
+            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+              <ul class="list-unstyled">
+                <li><a href="index.html" style="color: #FFFFFF;">Fitness Pass</a></li>
+                <li><a href="index.html#aboutUs" style="color: #FFFFFF;">About Us</a></li>
+                <li><a href="faq.html" style="color: #FFFFFF;">FAQ</a></li>
+                <li><a href="Pricing.html" style="color: #FFFFFF;">Subscription</a></li>
+                <li><a href="contactus.html" style="color: #FFFFFF;">Contact Us</a></li>
+                <li><a href="GymList.html" style="color: #FFFFFF;">Studios</a></li>
+                <li><a href="Register.html" style="color: #FFFFFF;">Sign Up Now</a></li><br>
+              </ul>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+          <h3 class="footer-heading mb-4 text-white">Stay up to date</h3>
+          <form action="#" class="d-flex footer-subscribe">
+            <input type="text" class="form-control rounded-0" placeholder="Enter your email">
+            <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" style="color: #007bff;">Fitness Pass</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>
