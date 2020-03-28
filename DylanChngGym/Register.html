@@ -21,6 +21,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000;!important">
+  <div class="container p-0">
   <a class="navbar-brand" href="#" style="margin-left: 5%!important"><img src="dumbell.png" alt="dumbell" width="60" height="50"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNav" aria-controls="gymNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -47,9 +48,11 @@
         <li class="nav-item"><a href="Pricing.html" class="nav-link">Subscription</a></li>
         <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
         <li class="nav-item"><a href="GymList.html" class="nav-link">Studios</a></li>
+        <li class="nav-item"><a href="Booking.html" class="nav-link">Booking</a></li>
         <li class="nav-item activeGym"><a href="Register.html" class="nav-link">Sign Up Now</a></li>
       </ul>
   </div>
+</div>
 </nav>
 
 <!--HEADER-->
@@ -97,6 +100,7 @@
               <input type="email" id="email" class="form-control" aria-label="Email input" aria-describedby="emailIcon" required placeholder="e.g: abc@gmail.com">
             </div>
 
+            <!--
             <label for="password">Password</label>
             <div class="form-group input-group input-group mb-3">
               <div class="input-group-prepend">
@@ -116,6 +120,8 @@
               </div>
               <input type="password" id="password2" class="form-control" aria-label="Confirm Password input" aria-describedby="password2Icon" required>
             </div>
+
+            -->
 
             <label for="contactNo">Contact No.</label>
             <div class="form-group input-group input-group mb-3">
@@ -236,8 +242,31 @@
 <!--END Content-->
 
 <script>
+
+    var decodedCookie = decodeURIComponent(document.cookie);
+    console.log(decodedCookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <1; i++) {
+      var pkg = ca[i].substring(ca[i].indexOf("=")+1);
+    }
+
+    if(pkg == "basic"){
+      document.getElementById('basicRadio').checked = true;
+    }
+
+    if(pkg == "standard"){
+      document.getElementById('standardRadio').checked = true;
+    }
+
+    if(pkg == "premium"){
+      document.getElementById('premiumRadio').checked = true;
+    }
+
+
+
     function CompletePayment() {
-    alert("Payment Successful! Thanks for choosing FitnessPass!");}
+      alert("Payment Successful! Thanks for choosing FitnessPass!");
+    }
 
     $('a[data-toggle="tooltip"]').tooltip({
         animated: 'fade',
