@@ -85,7 +85,7 @@
                 <input type="mail" class="wp-form-control wpcf7-email" placeholder="Email address">
                 <input type="text" class="wp-form-control wpcf7-text" placeholder="Subject">
                 <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="What would you like to tell us"></textarea>
-                <input type="submit" value="Submit" class="btn btn-primary">
+                <input type="button" onclick="submitFeedback()" value="Submit" class="btn btn-primary">
               </form>
            </div>
          </div>
@@ -174,5 +174,11 @@ We have tied connection and collaboration with various gyms and fitness faciliti
       </div>
     </div>
 </footer>
+
+<script>
+function submitFeedback(){
+  alert("Thank you, your response has been given to us");
+}
+</script>
 </body>
 </html>
