@@ -20,7 +20,7 @@
     .size {
     font-family:Bahnschrift light;
     text-align:center;
-    padding-top:7%;
+    padding-top:5%;
   }
     @media screen and (min-width: 601px) {
       .size {
@@ -34,10 +34,29 @@
       }
     }
 
+    .paragraph {
+    font-family:verdana,genava, sans-serif;
+    position:absolute;
+    color:white;
+    top:50%;
+    left:8%;
+  }
+
+    @media screen and (min-width: 601px) {
+      .paragraph {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .paragraph {
+        font-size: 11px;
+      }
+    }
 
     @media screen and (min-width: 601px) {
       .divsize {
-        height:390px;
+        height:400px;
       }
     }
 
@@ -98,9 +117,11 @@
     </div>
   </nav>
   <div style="position:relative">
-    <h1 style="position:absolute; top:30%; left:8%; font-size:5.3vw; font-family:Lucida Sans Unicode, Lucida Grande, Sans-serif; color:white">
+    <h1 style="position:absolute; top:15%; left:8%; font-size:5.3vw; font-family:Lucida Sans Unicode, Lucida Grande, Sans-serif; color:white">
       Our goal is to make health and<br>fitness achievable, approachable <br>and affordable
     </h1>
+    <p class="paragraph">Fitness Pass is a web-based application specialized in providing GYM classes and schedules <br>upon SUBSCRIPTION.
+    We have tied connection and collaboration with various gyms and <br>fitness facilities around Kuala Lumpur area.</p>
 
     <video width="100%" autoplay muted loop>
   		  <source src="Fitness.mp4" type="video/mp4">
@@ -113,6 +134,19 @@
         <p>Fitness isn't just about the goal - it's a journey! <br>That's why we believe fitness is important and should be accessible to everyone and everywhere without any inconvenient causes.
       </div>
   </div>
+
+
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="GymListPic/promote.jpg" alt="features" style="margin-top:10px;">
+        <h4 class="card-title">Many discoveries</h4>
+        <p class="card-text">Some example text. Some example text.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+
   <footer class="site-footer bg-dark">
     <div class="container">
       <div class="row">
@@ -120,7 +154,7 @@
                 <br><br><br>
           <h3 class="footer-heading mb-4 text-white">About us</h3>
           <p>Fitness Pass is a web-based application specialized in providing GYM classes and schedules upon SUBSCRIPTION.
-  We have tied connection and collaboration with various gyms and fitness facilities around Kuala Lumpur area.</p>
+            We have tied connection and collaboration with various gyms and fitness facilities around Kuala Lumpur area.</p>
           <p><a href="#" class="btn btn-primary text-white px-4">Read More</a></p>
         </div>
         <div class="col-md-5 mb-4 mb-md-0 ml-auto">
