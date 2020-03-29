@@ -70,7 +70,7 @@
     @media screen and (max-width: 600px) {
       .function {
         font-size: 20px;
-        padding-top:12px;
+        padding-top:7px;
         padding-left:10px;
       }
     }
@@ -92,6 +92,12 @@
       text-align:center;
     }
 
+    @media screen and (min-width: 601px) {
+        .fitnessText{
+          font-size:23px;
+      }
+    }
+
     @media screen and (max-width: 600px) {
       .fitnessText {
         font-size:13px;
@@ -111,11 +117,40 @@
   }
     @media screen and (max-width: 600px) {
       .padding {
-        padding-top:2px;
+        padding-top:0px;
         padding-left:10px;
         font-size:12px;
       }
     }
+
+    .resize {
+  }
+
+  @media screen and (min-width: 601px) {
+      .resize {
+        font-size:20px
+    }
+  }
+    @media screen and (max-width: 600px) {
+      .resize {
+        font-size:10px
+      }
+    }
+
+    .small {
+  }
+
+  @media screen and (min-width: 601px) {
+      .small {
+        font-size:20px
+    }
+  }
+    @media screen and (max-width: 600px) {
+      .small {
+        font-size:15px
+      }
+    }
+
   </style>
 </head>
 
@@ -201,14 +236,28 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-3">
-        <h1>Contact Us</h1>
-
+  <div class="container" style="height:550px">
+    <div class="row divsize">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="text-align:center">
+        <h1 class="size" style="padding-top:40px">Feel free to <br>contact us!</h1>
+        <h4 class="small">To know more information or report a problem, you can contact us!</h4>
+        <img src="contact.png" alt="contact" style="width:20%;"><br><br>
+        <button type="button" class="btn btn-primary">
+          <a href="contactus.html" style="color:white">Contact us</a>
+        </button>
       </div>
-      <div class="col-sm-3"></div>
+
+      <div class="col-sm-5" style="text-align:center">
+        <h1 class="size" style="padding-top:40px">Register as a member today!</h1>
+        <h4 class="small">Be a member today to get events notifications and offers</h4>
+        <img src="member.png" alt="member" style="width:23%;"><br><br>
+        <button type="button" class="btn btn-primary">
+          <a href="Register.html" style="color:white">Join now</a>
+        </button>
+      </div>
+
+      <div class="col-sm-1"></div>
     </div>
   </div>
   <footer class="site-footer bg-dark">
