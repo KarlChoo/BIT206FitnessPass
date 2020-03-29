@@ -54,6 +54,25 @@
       }
     }
 
+    .function {
+    font-family:Bahnschrift light;
+    color:white;
+    padding-top:80px;
+    padding-left:70px;
+  }
+
+    @media screen and (min-width: 601px) {
+      .function {
+        font-size: 60px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .function {
+        font-size: 11px;
+      }
+    }
+
     @media screen and (min-width: 601px) {
       .divsize {
         height:400px;
@@ -136,13 +155,11 @@
   </div>
 
 
-    <div class="card">
-      <div class="card-body">
-        <img class="card-img-top" src="GymListPic/promote.jpg" alt="features" style="margin-top:10px;">
-        <h4 class="card-title">Many discoveries</h4>
-        <p class="card-text">Some example text. Some example text.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+    <div class="card" style="position:relative; border:none">
+      <img class="card-img-top" src="GymListPic/promote.jpg" alt="features" style="margin-top:10px;">
+      <div class="card-body" style="position:absolute">
+        <h4 class="function">Approachable</h4>
+        <p style="color:white; padding-left:68px; font-size:2vw;">We are promotingm gyms and fitness centers to you. So you can able to find <br>a perfect gym or fitness center that is convenient for you to travel.
       </div>
     </div>
 
