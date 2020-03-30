@@ -65,6 +65,20 @@ Navigation css
 
 /***
 *
+index css
+*
+***/
+.buttonBottom{
+  position:absolute;
+  bottom:20px;
+}
+
+.spaceForButton{
+  margin-bottom:70px;
+}
+
+/***
+*
 Gym Classes css
 *
 ***/
