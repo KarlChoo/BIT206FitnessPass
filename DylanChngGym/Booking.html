@@ -63,7 +63,7 @@
 
 <!--Content-->
 <div class="container text-light bg-dark pb-4" id="signUpForm">
-  <form method="post" autocomplete="false">
+  <form method="post" action="javascript:void(0)" autocomplete="false" onsubmit="completeBooking()">
     <h1 class="pt-3 text-center">User Infomation</h1>
     <hr class="border-light">
         <div class="row">
@@ -123,7 +123,7 @@
           </div>
 
           <div class="col-sm-12 col-md-6">
-            <label for="contactNo">Class</label>
+            <label for="contactNo">Studio</label>
             <select class="form-control" id="studio">
                 <option>CHI Fitness</option>
                 <option>The Flow Studio</option>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="col-sm-12 col-md-12 p-0 my-4">
-          <button type="button" class="btn btn-primary btn-lg btn-block " onclick="completeBooking()">Book Class</button>
+          <button type="submit" class="btn btn-primary btn-lg btn-block ">Book Class</button>
         </div>
     </form>
 
@@ -181,6 +181,7 @@ function populateClass(className){
 
 function completeBooking(){
     alert("Your booking has been made! Thank you for choosing FitnessPass");
+    window.location.reload();
 }
 </script>
 

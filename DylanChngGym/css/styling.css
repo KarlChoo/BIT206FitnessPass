@@ -16,6 +16,25 @@ footer{
 #body{
   background-color: #474e5d;
 }
+
+#float-button{
+  display: none;
+  position: fixed;
+  width:40px;
+  height:40px;
+  line-height:30px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#float-button:hover{
+  background-color:#54D450 !important;
+}
 /***
 *
 Navigation css
@@ -135,6 +154,16 @@ Subscription CSS
   bottom: 2%;
   left: 30%;
   width: 40%;
+}
+
+/***
+*
+Studio CSS
+*
+***/
+.studioWidth{
+  width:60%;
+  margin:auto;
 }
 
 /***

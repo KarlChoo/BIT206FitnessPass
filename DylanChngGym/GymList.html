@@ -17,10 +17,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/fontawesome.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: #474e5d;">
 
+<body style="background-color: #474e5d;">
+<button id="float-button" onclick="topFunction()" class="rounded-circle text-white bg-primary"><i class="fas fa-arrow-up"></i></button>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000;!important">
   <div class="container p-0">
@@ -62,10 +63,10 @@
     <!-- Blog Entries Column -->
     <div class="col-lg-12 col-md-10">
 
-      <h1 class="my-4" style = "text-align :center; color : white;">Studios</h1>
+      <h1 class="mt-4 mb-5" style = "text-align :center; color : white;">Studios</h1>
 
       <!-- Blog Post -->
-      <div class="card mb-4" id="ChiFitness">
+      <div class="card studioWidth mb-5" id="ChiFitness">
         <img class="card-img-top" src="GymListPic/ChiFitness.jpg" alt="Chi Fitness">
         <div class="card-body">
           <h2 class="card-title">CHI Fitness</h2>
@@ -84,7 +85,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="TheFlowStudio">
+      <div class="card studioWidth mb-5" id="TheFlowStudio">
         <img class="card-img-top" src="GymListPic/TheFlowStudio.jpg" alt="The Flow Studio">
         <div class="card-body">
           <h2 class="card-title">The Flow Studio</h2>
@@ -103,7 +104,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="HotYoStudio">
+      <div class="card studioWidth mb-5" id="HotYoStudio">
         <img class="card-img-top" src="GymListPic/HotYoStudio.jpg" alt="Hot Yo Studio">
         <div class="card-body">
           <h2 class="card-title">Hot Yo Studio</h2>
@@ -122,7 +123,7 @@
         </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="MericanMuayThai">
+      <div class="card studioWidth mb-5" id="MericanMuayThai">
         <img class="card-img-top" src="GymListPic/MericanMuayThai.jpg" alt="Merican Muay Thai">
         <div class="card-body">
           <h2 class="card-title">Merican Muay Thai</h2>
@@ -141,7 +142,7 @@
         </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="TribeBoxingStudio">
+      <div class="card studioWidth mb-5" id="TribeBoxingStudio">
         <img class="card-img-top" src="GymListPic/TribeBoxingStudio.jpg" alt="Tribe Boxing Studio">
         <div class="card-body">
           <h2 class="card-title">Tribe Boxing Studio</h2>
@@ -160,7 +161,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="BoxTyme">
+      <div class="card studioWidth mb-5" id="BoxTyme">
         <img class="card-img-top" src="GymListPic/BoxTyme.jpg" alt="BoxTyme">
         <div class="card-body">
           <h2 class="card-title">BoxTyme</h2>
@@ -179,7 +180,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="MuayFit">
+      <div class="card studioWidth mb-5" id="MuayFit">
         <img class="card-img-top" src="GymListPic/MuayFit.jpg" alt="MuayFit">
         <div class="card-body">
           <h2 class="card-title">MuayFit</h2>
@@ -197,7 +198,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="EliteMMA">
+      <div class="card studioWidth mb-5" id="EliteMMA">
         <img class="card-img-top" src="GymListPic/EliteMMA.jpg" alt="Elite MMA">
         <div class="card-body">
           <h2 class="card-title">Elite MMA</h2>
@@ -216,7 +217,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="CrossMuayThai">
+      <div class="card studioWidth mb-5" id="CrossMuayThai">
         <img class="card-img-top" src="GymListPic/CrossMuayThai.jpg" alt="Cross Muay Thai">
         <div class="card-body">
           <h2 class="card-title">Cross Muay Thai</h2>
@@ -235,7 +236,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="UrbanSpringPilates">
+      <div class="card studioWidth mb-5" id="UrbanSpringPilates">
         <img class="card-img-top" src="GymListPic/UrbanSpringPilates.jpg" alt="Urban Spring Pilates">
         <div class="card-body">
           <h2 class="card-title">Urban Spring Pilates</h2>
@@ -254,7 +255,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="ZenithPilates">
+      <div class="card studioWidth mb-5" id="ZenithPilates">
         <img class="card-img-top" src="GymListPic/ZenithPilates.jpg" alt="Zenith Pilates">
         <div class="card-body">
           <h2 class="card-title">Zenith Pilates</h2>
@@ -273,7 +274,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="VisionPilates">
+      <div class="card studioWidth mb-5" id="VisionPilates">
         <img class="card-img-top" src="GymListPic/VisionPilates.jpg" alt="Vision Pilates">
         <div class="card-body">
           <h2 class="card-title">Vision Pilates</h2>
@@ -292,7 +293,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="AvengersGymZumba">
+      <div class="card studioWidth mb-5" id="AvengersGymZumba">
         <img class="card-img-top" src="GymListPic/AvengersGymZumba.jpg" alt="AvengerGym&Zumba">
         <div class="card-body">
           <h2 class="card-title">Avenger Gym &amp; Zumba</h2>
@@ -311,7 +312,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5"  id="CelebrityFitnessKepong">
+      <div class="card studioWidth mb-5"  id="CelebrityFitnessKepong">
         <img class="card-img-top" src="GymListPic/CelebrityFitnessKepong.jpg" alt="CelebrityFitnessKepong">
         <div class="card-body">
           <h2 class="card-title">Celebrity Fitness (Kepong Village)</h2>
@@ -330,7 +331,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="PushMore">
+      <div class="card studioWidth mb-5" id="PushMore">
         <img class="card-img-top" src="GymListPic/PushMore.jpg" alt="PushMore">
         <div class="card-body">
           <h2 class="card-title">PushMore</h2>
@@ -348,7 +349,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="CrossfitPahlawan">
+      <div class="card studioWidth mb-5" id="CrossfitPahlawan">
         <img class="card-img-top" src="GymListPic/CrossfitPahlawan.jpg" alt="CrossfitPahlawan">
         <div class="card-body">
           <h2 class="card-title">Crossfit Pahlawan</h2>
@@ -367,7 +368,7 @@
       </div>
 
       <!-- Blog Post -->
-      <div class="card mb-5" id="CrossFitLah">
+      <div class="card studioWidth mb-5" id="CrossFitLah">
         <img class="card-img-top" src="GymListPic/UrbanSpringPilates.jpg" alt="Urban Spring Pilates">
         <div class="card-body">
           <h2 class="card-title">CrossFit Lah</h2>
@@ -388,6 +389,24 @@
     </div>
 </div>
 <!-- /.container -->
+
+<script type="text/javascript">
+var floatBtn = document.getElementById("float-button");
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    floatBtn.style.display = "block";
+  } else {
+    floatBtn.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <!-- Footer -->
 <footer class="site-footer bg-dark">
