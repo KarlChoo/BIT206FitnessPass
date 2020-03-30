@@ -186,19 +186,19 @@
             <label class="h3 text-center" for="contactNo">Select a Package</label><br>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="package" id="basicRadio" value="basic" checked>
+              <input class="form-check-input radioBtn" type="radio" name="package" id="basicRadio" value="basic" checked>
               <label class="form-check-label" for="basicRadio">
                   Basic
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="package" id="standardRadio" value="standard">
+              <input class="form-check-input radioBtn" type="radio" name="package" id="standardRadio" value="standard">
               <label class="form-check-label" for="standardRadio">
                   Standard
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="package" id="premiumRadio" value="premium">
+              <input class="form-check-input radioBtn" type="radio" name="package" id="premiumRadio" value="premium">
               <label class="form-check-label" for="premiumRadion">
                   Premium
               </label>
@@ -252,14 +252,17 @@
 
     if(pkg == "basic"){
       document.getElementById('basicRadio').checked = true;
+      $("#basicRadio").siblings().html("Basic (RM135, 4 Classes, 10 Entries)");
     }
 
     if(pkg == "standard"){
       document.getElementById('standardRadio').checked = true;
+      $("#standardRadio").siblings().html("Standard (RM188, 8 Classes, Unlimited Entries)");
     }
 
     if(pkg == "premium"){
       document.getElementById('premiumRadio').checked = true;
+      $("#premiumRadio").siblings().html("Premium (RM255, Unlimited Classes, Unlimited Entries)");
     }
 
 
@@ -280,6 +283,23 @@
         placement: 'top',
         html:true
     });
+
+    $(".radioBtn").change(function(){
+      if($("#basicRadio").is(":checked")){
+        $("#basicRadio").siblings().html("Basic (RM135, 4 Classes, 10 Entries)");
+        $("#standardRadio").siblings().html("Standard");
+        $("#premiumRadio").siblings().html("Premium");
+      }else if($("#standardRadio").is(":checked")){
+        $("#basicRadio").siblings().html("Basic");
+        $("#standardRadio").siblings().html("Standard (RM188, 8 Classes, Unlimited Entries)");
+        $("#premiumRadio").siblings().html("Premium");
+      }else if($("#premiumRadio").is(":checked")){
+        $("#basicRadio").siblings().html("Basic");
+        $("#standardRadio").siblings().html("Standard");
+        $("#premiumRadio").siblings().html("Premium (RM255, Unlimited Classes, Unlimited Entries)");
+      }
+    });
+
 </script>
 
 
